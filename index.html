@@ -1,12 +1,174 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=https://researchbyabel.vercel.app/" />
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <p>If you are not redirected automatically, 
-      <a href="https://researchbyabel.vercel.app/">click here</a>.
-    </p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#050505">
+  <title>Under Maintenance | Abel Kidane</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #050505;
+      --surface: #0d0d0d;
+      --border: #232323;
+      --text: #fafafa;
+      --muted: #a1a1aa;
+      --blue: #3b82f6;
+      --purple: #8b5cf6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      background: var(--background);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+    }
+
+    header {
+      padding: 24px clamp(24px, 5vw, 64px);
+      border-bottom: 1px solid #171717;
+    }
+
+    .brand {
+      font-size: clamp(24px, 4vw, 34px);
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(110deg, var(--blue), var(--purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      place-items: center;
+      padding: 48px 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 620px;
+      padding: clamp(32px, 6vw, 56px);
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      background: var(--surface);
+      text-align: center;
+    }
+
+    .icon {
+      display: grid;
+      place-items: center;
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 28px;
+      border-radius: 22px;
+      background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, 0.12),
+        rgba(139, 92, 246, 0.12)
+      );
+      color: var(--blue);
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(28px, 6vw, 44px);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 32px;
+      padding: 10px 18px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: #c4b5fd;
+      font-size: 14px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--purple);
+      box-shadow: 0 0 12px rgba(139, 92, 246, 0.5);
+    }
+
+    footer {
+      padding: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      ABEL <span class="gradient-text">KIDANE</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" aria-labelledby="maintenance-title">
+      <div class="icon" aria-hidden="true">
+        <svg
+          width="34"
+          height="34"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M14.7 6.3a5.5 5.5 0 0 0-7 7L2.5 18.5a2.1 2.1 0 0 0 3 3l5.2-5.2a5.5 5.5 0 0 0 7-7l-3.5 3.5-3-3 3.5-3.5Z"/>
+        </svg>
+      </div>
+
+      <h1 id="maintenance-title">
+        Under Maintenance<br>
+        <span class="gradient-text">Back Soon.</span>
+      </h1>
+
+      <p>
+        I am updating my website to improve your experience.
+        Please check back soon. Thank you!
+      </p>
+
+      <div class="status">
+        <span class="dot" aria-hidden="true"></span>
+        Updates in progress
+      </div>
+    </section>
+  </main>
+
+  <footer>Abel Kidane · Research &amp; Engineering</footer>
+</body>
 </html>
